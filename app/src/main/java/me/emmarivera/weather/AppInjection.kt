@@ -7,8 +7,12 @@ import dagger.Component
 import dagger.Module
 import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
+import dagger.android.ContributesAndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
+import me.emmarivera.weather.internal.ActivityScope
 import me.emmarivera.weather.internal.AppScope
+import me.emmarivera.weather.splash.SplashModule
+import me.emmarivera.weather.splash.view.SplashActivity
 
 @Module
 abstract class AppModule {
@@ -22,11 +26,20 @@ abstract class AppModule {
   abstract fun appContext(app: WeatherApp): Context
 }
 
+@Module
+abstract class ActivityInjectorModule {
+
+  @ActivityScope
+  @ContributesAndroidInjector(modules = [SplashModule::class])
+  abstract fun splashActivity(): SplashActivity
+}
+
 @AppScope
 @Component(modules = [
-  AppModule::class,
   AndroidInjectionModule::class,
-  AndroidSupportInjectionModule::class
+  AndroidSupportInjectionModule::class,
+  AppModule::class,
+  ActivityInjectorModule::class
 ])
 interface AppComponent : AndroidInjector<WeatherApp> {
 

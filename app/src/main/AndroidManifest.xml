@@ -19,7 +19,7 @@
     </activity>
 
     <activity
-      android:name=".feature.MainActivity"
+      android:name=".feature.HomeActivity"
       android:theme="@style/AppTheme.DarkActionBar" />
   </application>
 

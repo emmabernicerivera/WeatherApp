@@ -3,7 +3,7 @@ package me.emmarivera.weather.splash.view
 import android.content.Intent
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
-import me.emmarivera.weather.MainActivity
+import me.emmarivera.weather.home.HomeActivity
 import me.emmarivera.weather.R
 import me.emmarivera.weather.internal.Loggable
 import me.emmarivera.weather.splash.presenter.SplashPresenter
@@ -33,7 +33,7 @@ class SplashActivity : DaggerAppCompatActivity(), SplashView, Loggable {
     logger.i("navigateToHome()")
 
     startActivity(
-      Intent(this, MainActivity::class.java)
+      Intent(this, HomeActivity::class.java)
     )
     supportFinishAfterTransition()
   }

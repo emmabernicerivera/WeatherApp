@@ -9,6 +9,8 @@ import dagger.android.AndroidInjectionModule
 import dagger.android.AndroidInjector
 import dagger.android.ContributesAndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
+import me.emmarivera.weather.home.HomeActivity
+import me.emmarivera.weather.home.HomeModule
 import me.emmarivera.weather.internal.ActivityScope
 import me.emmarivera.weather.internal.AppScope
 import me.emmarivera.weather.splash.SplashModule
@@ -32,6 +34,10 @@ abstract class ActivityInjectorModule {
   @ActivityScope
   @ContributesAndroidInjector(modules = [SplashModule::class])
   abstract fun splashActivity(): SplashActivity
+
+  @ActivityScope
+  @ContributesAndroidInjector(modules = [HomeModule::class])
+  abstract fun mainActivity(): HomeActivity
 }
 
 @AppScope

@@ -1,12 +1,12 @@
-package me.emmarivera.weather.splash.view
+package me.emmarivera.weather.feature.splash.view
 
 import android.content.Intent
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
-import me.emmarivera.weather.MainActivity
+import me.emmarivera.weather.feature.MainActivity
 import me.emmarivera.weather.R
 import me.emmarivera.weather.internal.Loggable
-import me.emmarivera.weather.splash.presenter.SplashPresenter
+import me.emmarivera.weather.feature.splash.presenter.SplashPresenter
 import javax.inject.Inject
 
 class SplashActivity : DaggerAppCompatActivity(), SplashView, Loggable {

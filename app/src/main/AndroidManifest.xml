@@ -11,7 +11,7 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
 
-    <activity android:name=".splash.view.SplashActivity">
+    <activity android:name="me.emmarivera.weather.feature.splash.view.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -19,7 +19,7 @@
     </activity>
 
     <activity
-      android:name=".MainActivity"
+      android:name=".feature.MainActivity"
       android:theme="@style/AppTheme.DarkActionBar" />
   </application>
 

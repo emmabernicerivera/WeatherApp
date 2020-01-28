@@ -1,4 +1,4 @@
-package me.emmarivera.weather.splash.view
+package me.emmarivera.weather.feature.splash.view
 
 interface SplashView {
 

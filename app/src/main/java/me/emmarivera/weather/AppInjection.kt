@@ -11,8 +11,8 @@ import dagger.android.ContributesAndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule
 import me.emmarivera.weather.internal.ActivityScope
 import me.emmarivera.weather.internal.AppScope
-import me.emmarivera.weather.splash.SplashModule
-import me.emmarivera.weather.splash.view.SplashActivity
+import me.emmarivera.weather.feature.splash.SplashModule
+import me.emmarivera.weather.feature.splash.view.SplashActivity
 
 @Module
 abstract class AppModule {

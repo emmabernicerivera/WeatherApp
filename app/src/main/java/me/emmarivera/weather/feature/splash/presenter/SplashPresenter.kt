@@ -1,4 +1,4 @@
-package me.emmarivera.weather.splash.presenter
+package me.emmarivera.weather.feature.splash.presenter
 
 interface SplashPresenter {
 

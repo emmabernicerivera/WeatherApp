@@ -5,7 +5,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.rxkotlin.subscribeBy
 import me.emmarivera.weather.internal.ActivityScope
-import me.emmarivera.weather.internal.Loggable
+import me.emmarivera.weather.internal.logging.Loggable
 import me.emmarivera.weather.feature.splash.view.SplashView
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject

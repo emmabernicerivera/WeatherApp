@@ -1,4 +1,4 @@
-package me.emmarivera.weather.internal
+package me.emmarivera.weather.internal.logging
 
 import timber.log.Timber
 

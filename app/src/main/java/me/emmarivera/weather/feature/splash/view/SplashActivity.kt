@@ -3,7 +3,7 @@ package me.emmarivera.weather.feature.splash.view
 import android.content.Intent
 import android.os.Bundle
 import dagger.android.support.DaggerAppCompatActivity
-import me.emmarivera.weather.feature.HomeActivity
+import me.emmarivera.weather.feature.home.view.HomeActivity
 import me.emmarivera.weather.R
 import me.emmarivera.weather.internal.logging.Loggable
 import me.emmarivera.weather.feature.splash.presenter.SplashPresenter

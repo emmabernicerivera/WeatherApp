@@ -15,6 +15,8 @@ import dagger.android.support.AndroidSupportInjectionModule
 import me.emmarivera.weather.data.DataModule
 import me.emmarivera.weather.feature.home.HomeModule
 import me.emmarivera.weather.feature.home.view.HomeActivity
+import me.emmarivera.weather.feature.permission.PermissionRequiredActivity
+import me.emmarivera.weather.feature.permission.PermissionRequiredModule
 import me.emmarivera.weather.internal.ActivityScope
 import me.emmarivera.weather.internal.AppScope
 import me.emmarivera.weather.feature.splash.SplashModule
@@ -62,6 +64,10 @@ abstract class ActivityInjectorModule {
   @ActivityScope
   @ContributesAndroidInjector(modules = [HomeModule::class])
   abstract fun homeActivity(): HomeActivity
+
+  @ActivityScope
+  @ContributesAndroidInjector(modules = [PermissionRequiredModule::class])
+  abstract fun permissionRequiredActivity(): PermissionRequiredActivity
 }
 
 /**

@@ -25,6 +25,6 @@ class HomeActivity : DaggerAppCompatActivity(), HomeView,
     super.onCreate(savedInstanceState)
     setContentView(layout.activity_home)
 
-    
+
   }
 }

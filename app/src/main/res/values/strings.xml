@@ -3,4 +3,8 @@
   <string name="search">Search</string>
   <string name="latitude">Latitude</string>
   <string name="longitude">Longitude</string>
+  <string name="location">Location</string>
+  <string name="grant">Grant</string>
+  <string name="granted">Granted</string>
+  <string name="location_request_title">Location is required</string>
 </resources>

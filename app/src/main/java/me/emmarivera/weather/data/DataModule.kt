@@ -5,6 +5,7 @@ import dagger.Module
 import dagger.Provides
 import me.emmarivera.weather.BuildConfig
 import me.emmarivera.weather.data.remote.LoggingInterceptor
+import me.emmarivera.weather.data.repository.RepositoryModule
 import me.emmarivera.weather.internal.AppScope
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -14,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 /**
  * Tells Dagger2 how to create our data-layer objects
  */
-@Module
+@Module(includes = [RepositoryModule::class])
 class DataModule {
 
   /**

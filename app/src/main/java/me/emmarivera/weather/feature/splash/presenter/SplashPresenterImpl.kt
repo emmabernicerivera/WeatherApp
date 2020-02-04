@@ -8,7 +8,6 @@ import me.emmarivera.weather.data.repository.PermissionRepository
 import me.emmarivera.weather.internal.ActivityScope
 import me.emmarivera.weather.internal.logging.Loggable
 import me.emmarivera.weather.feature.splash.view.SplashView
-import java.security.AllPermission
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 

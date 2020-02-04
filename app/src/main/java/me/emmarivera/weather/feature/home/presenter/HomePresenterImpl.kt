@@ -9,6 +9,20 @@ import javax.inject.Inject
 class HomePresenterImpl @Inject constructor(
     private val view: HomeView
 ) : HomePresenter, Loggable{
-
     override val logTag: String = "home-presenter"
+
+    lateinit var latitude: String
+    lateinit var longitude: String
+
+    override fun updateLatitude(s: String) {
+        latitude = s
+    }
+
+    override fun updateLongitude(s: String) {
+        longitude = s
+    }
+
+    override fun searchWeatherByLocation() {
+        // TODO perform searching
+    }
 }

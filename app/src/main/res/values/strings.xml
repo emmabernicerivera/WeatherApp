@@ -1,3 +1,7 @@
 <resources>
   <string name="app_name">Weather</string>
+  <string name="location">Location</string>
+  <string name="grant">Grant</string>
+  <string name="granted">Granted</string>
+  <string name="location_request_title">Location is required</string>
 </resources>
